@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('money.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    font: 900 40px sans-serif;
+    color: blue;
+    text-transform: uppercase;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    transform: rotate(180deg);
+}
+
+.currency select {
+    background: url('down-arrow.png') right 50% no-repeat;
+    background-size: .8em;
+    padding-right: 20px;
+    font: 600 25px sans-serif;
+    appearance: none;
+    color: blue;
+}
+
+.currency input {
+    margin-left: 100px;
+    padding-right: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+    font-size: 22px;
+    text-align: right;
+}
+
+.middle button {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.middle button:active {
+    transform: rotate(90deg) scale(0.9);
+}
+
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
